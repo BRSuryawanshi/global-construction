@@ -1,0 +1,343 @@
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= ROOT ================= */
+:root {
+  --primary: #f59e0b; /* construction yellow */
+  --dark: #111827;
+  --text: #4b5563;
+  --light: #f9fafb;
+  --white: #ffffff;
+}
+
+/* ================= PAGE ================= */
+.services-page {
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* ================= HERO ================= */
+.services-hero {
+  height: 70vh;
+  background: url("/images/hero.jpeg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 850px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero-content p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* spacing */
+.services-grid-section,
+.materials,
+.service-details,
+.why-services,
+.areas,
+.pricing-note,
+.services-cta {
+  padding: 100px 0;
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  font-size: 34px;
+  color: var(--dark);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  display: block;
+  margin-top: 10px;
+}
+
+/* ================= SERVICES GRID ================= */
+.services-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: var(--text);
+}
+
+/* ================= MATERIALS ================= */
+.materials-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.materials-grid div {
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.materials-grid div:hover {
+  border-color: var(--primary);
+}
+
+/* ================= DETAILS ================= */
+.service-details {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.detail {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.detail.reverse {
+  flex-direction: row-reverse;
+}
+
+.detail-img {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.detail-img img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.detail-img:hover img {
+  transform: scale(1.05);
+}
+
+.detail-text {
+  flex: 1;
+}
+
+.detail-text p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ================= WHY ================= */
+.why-services {
+  text-align: center;
+}
+
+.why-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.why-grid div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* ================= AREAS ================= */
+.areas {
+  text-align: center;
+}
+
+.areas p {
+  margin-top: 15px;
+  font-size: 17px;
+  color: var(--text);
+}
+
+/* ================= PRICING ================= */
+.pricing-note {
+  text-align: center;
+}
+
+.pricing-note p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: var(--text);
+}
+
+/* ================= CTA ================= */
+.services-cta {
+  text-align: center;
+}
+
+.btn {
+  padding: 12px 28px;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn {
+  background: var(--primary);
+  color: #000;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/* ================= AREAS ================= */
+.areas {
+  text-align: center;
+}
+
+.areas-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* 🔥 PREMIUM CARD */
+.area-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--dark);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+/* hover effect */
+.area-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* tablet */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .materials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail,
+  .detail.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .services-grid,
+  .materials-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .detail-img img {
+    height: 250px;
+  }
+
+  .services-grid-section,
+  .materials,
+  .service-details,
+  .why-services,
+  .areas,
+  .pricing-note,
+  .services-cta {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+}

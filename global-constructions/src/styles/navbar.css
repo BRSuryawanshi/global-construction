@@ -1,0 +1,175 @@
+/* ================= NAVBAR BASE ================= */
+.navbar {
+  background: rgba(31, 41, 55, 0.95);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 18px 0;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+/* Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo span {
+  font-size: 18px;
+}
+
+.logo span span {
+  color: var(--primary);
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Links */
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hover color */
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Active link */
+.nav-links .active {
+  color: var(--primary);
+}
+
+.nav-links .active::after {
+  width: 100%;
+}
+
+/* ================= CTA BUTTON (NEW) ================= */
+.nav-links .contact-btn {
+  padding: 8px 16px;
+  background: var(--primary);
+  color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.nav-links .contact-btn:hover {
+  background: #fbbf24;
+  color: #000;
+}
+
+/* ================= MENU BUTTON ================= */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    background: rgba(31, 41, 55, 0.98);
+    backdrop-filter: blur(8px);
+
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+  }
+
+  .nav-links.active {
+    max-height: 500px;
+  }
+
+  .nav-links a {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+
+  .nav-links .contact-btn {
+    width: 80%;
+    text-align: center;
+  }
+}

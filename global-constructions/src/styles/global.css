@@ -1,0 +1,18 @@
+:root {
+  --primary: #f59e0b;
+  --dark: #1f2937;
+  --light: #f9fafb;
+  --text: #111827;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--text);
+}
