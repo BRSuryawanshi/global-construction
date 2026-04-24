@@ -8,10 +8,10 @@ function Services() {
       <div className="services-hero">
         <div className="overlay"></div>
         <div className="hero-content">
-          <h1>Our Services</h1>
+          <h1>Construction Services & Crusher Solutions</h1>
           <p>
-            Delivering all types of civil construction works with high-quality materials,
-            modern machinery, and reliable execution across multiple regions.
+            Delivering civil construction works, crusher plant services, and high-quality construction materials
+            with modern machinery and reliable execution across multiple locations.
           </p>
         </div>
       </div>
@@ -21,7 +21,7 @@ function Services() {
         {/* ================= SERVICES GRID ================= */}
         <section className="services-grid-section">
 
-          <h2>What We Offer</h2>
+          <h2>Our Construction & Crusher Services</h2>
 
           <div className="services-grid">
 
@@ -29,42 +29,42 @@ function Services() {
               <h3>🏗️ Civil Works</h3>
               <p>
                 We undertake all types of civil construction works including infrastructure,
-                government, and large-scale projects.
+                government, and large-scale building projects.
               </p>
             </div>
 
             <div className="service-card">
               <h3>🚆 Railway Works</h3>
               <p>
-                Specialized in railway ballast depot operations and railway construction works.
+                Specialized in railway ballast supply, depot operations, and railway infrastructure construction.
               </p>
             </div>
 
             <div className="service-card">
               <h3>🪨 Stone Crusher Plants</h3>
               <p>
-                High-capacity crusher plants with daily production exceeding 1000+ tons per plant.
+                High-capacity crusher plants producing 1000+ tons daily for roads, buildings, and infrastructure projects.
               </p>
             </div>
 
             <div className="service-card">
               <h3>🧱 Material Manufacturing</h3>
               <p>
-                Production and supply of high-quality construction materials for strong foundations.
+                Production and supply of high-quality construction materials including aggregates, sand, and stone.
               </p>
             </div>
 
             <div className="service-card">
               <h3>🚚 Transport & Logistics</h3>
               <p>
-                Efficient transportation network ensuring fast and reliable delivery to project sites.
+                Strong transportation network ensuring fast, safe, and reliable delivery to construction sites.
               </p>
             </div>
 
             <div className="service-card">
               <h3>📦 Bulk & Custom Orders</h3>
               <p>
-                We handle bulk orders and customized requirements for RMC plants and project works.
+                Bulk supply and customized solutions for RMC plants, contractors, and large infrastructure projects.
               </p>
             </div>
 
@@ -74,7 +74,7 @@ function Services() {
         {/* ================= MATERIALS ================= */}
         <section className="materials">
 
-          <h2>Materials We Supply</h2>
+          <h2>Construction Materials We Supply</h2>
 
           <div className="materials-grid">
             <div>06mm Stone Metal</div>
@@ -95,27 +95,27 @@ function Services() {
 
           <div className="detail">
             <div className="detail-img">
-              <img src="/images/gallery1.jpg" alt="" />
+              <img src="/images/gallery1.jpg" alt="high capacity crusher plant producing construction materials" />
             </div>
             <div className="detail-text">
               <h2>High Production Capacity</h2>
               <p>
                 Our crusher plants are equipped with modern machinery capable of producing
                 over <strong>1000+ tons per day per plant</strong>, ensuring continuous
-                supply for large-scale construction projects.
+                supply for large-scale construction and infrastructure projects.
               </p>
             </div>
           </div>
 
           <div className="detail reverse">
             <div className="detail-img">
-              <img src="/images/gallery2.jpg" alt="" />
+              <img src="/images/gallery2.jpg" alt="construction material transport trucks and logistics" />
             </div>
             <div className="detail-text">
               <h2>Transport & Delivery</h2>
               <p>
                 With a fleet of dumpers, tippers, and loaders, we provide fast,
-                safe, and reliable delivery directly to your construction site.
+                safe, and reliable delivery of construction materials directly to your site.
               </p>
             </div>
           </div>
@@ -125,14 +125,14 @@ function Services() {
         {/* ================= WHY US ================= */}
         <section className="why-services">
 
-          <h2>Why Choose Our Services</h2>
+          <h2>Why Choose Our Construction Services</h2>
 
           <div className="why-grid">
             <div>✔ High Production Capacity</div>
             <div>✔ Modern Machinery & Equipment</div>
             <div>✔ Reliable Transport Network</div>
-            <div>✔ Trusted for Project Works</div>
-            <div>✔ Quality First Approach</div>
+            <div>✔ Trusted for Infrastructure Projects</div>
+            <div>✔ Quality Construction Materials</div>
             <div>✔ Competitive Pricing</div>
           </div>
 
@@ -157,11 +157,11 @@ function Services() {
         {/* ================= PRICING ================= */}
         <section className="pricing-note">
 
-          <h2>Pricing</h2>
+          <h2>Pricing & Quotes</h2>
 
           <p>
             Pricing depends on location, transportation, and applicable royalties.
-            Contact us for a customized quote based on your project requirements.
+            Contact us for a customized quote for construction materials and crusher services.
           </p>
 
         </section>
@@ -169,7 +169,7 @@ function Services() {
         {/* ================= CTA ================= */}
         <section className="services-cta">
 
-          <h2>Need Reliable Construction Services?</h2>
+          <h2>Need Construction Materials or Crusher Services?</h2>
 
           <div className="cta-buttons">
             <a href="tel:+918087132879" className="btn">
@@ -177,8 +177,10 @@ function Services() {
             </a>
 
             <a
-              href="https://wa.me/918087132879"
+              href="https://wa.me/918087132879?text=Hi%20I%20visited%20your%20website%20and%20I%20need%20a%20quote%20for%20construction%20materials%20or%20crusher%20services."
               className="btn outline"
+              target="_blank"
+              rel="noreferrer"
             >
               WhatsApp
             </a>
