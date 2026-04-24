@@ -20,7 +20,7 @@ function Footer() {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/91XXXXXXXXXX"
+            href="https://wa.me/+918087132879"
             target="_blank"
             className="footer-btn whatsapp"
           >
@@ -44,7 +44,7 @@ function Footer() {
         <div className="footer-section">
           <h3>Contact</h3>
 
-          <p>📞 +91 XXXXX XXXXX</p>
+          <p>📞 +918087132879</p>
           <p>📍 Aurangabad, Maharashtra</p>
           <p>✉️ email@example.com</p>
 
